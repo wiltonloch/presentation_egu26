@@ -1,0 +1,37 @@
+<svg width="1600" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .label { font: 50px sans-serif; fill: #EEEEEE; dominant-baseline: middle; }
+    .value { font: 40px sans-serif; fill: #EEEEEE; dominant-baseline: middle; }
+  </style>
+
+  <!-- Bars -->
+  <!-- Scale factor: 10 -> 1000px -->
+
+  <!-- GPU porting and infrastructure -->
+  <text x="0" y="63" class="label">
+    <tspan x="0" dy="0">GPU porting and</tspan>
+    <tspan x="0" dy="44">infrastructure</tspan>
+  </text>
+  <rect x="560" y="40" width="1000" height="90" fill="#F44336"/>
+  <text x="570" y="85" class="value">10</text>
+
+  <!-- Coupling and integration -->
+  <text x="0" y="233" class="label">
+    <tspan x="0" dy="0">Coupling and</tspan>
+    <tspan x="0" dy="44">integration</tspan>
+  </text>
+  <rect x="560" y="210" width="500" height="90" fill="#2196F3"/>
+  <text x="570" y="255" class="value">5</text>
+
+  <!-- Parallelization and software engineering -->
+  <text x="0" y="403" class="label">
+    <tspan x="0" dy="0">Parallelization and</tspan>
+    <tspan x="0" dy="44">software engineering</tspan>
+  </text>
+  <rect x="560" y="380" width="300" height="90" fill="#FFC107"/>
+  <text x="570" y="425" class="value">3</text>
+
+  <!-- Axis line -->
+  <line x1="560" y1="10" x2="560" y2="490" stroke="#000"/>
+
+</svg>

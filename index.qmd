@@ -1,0 +1,288 @@
+---
+title: "The natESM Journey for Improving Software Quality in Earth System Modelling"
+#subtitle: "What is already there and where to go"
+author: <br>Wilton Jaciel Loch 
+institute: German Climate Computing Center (DKRZ)
+format:
+  revealjs:
+    width: 1280
+    height: 720
+    theme: night
+    slide-number: true
+    transition: slide
+    transition-speed: slow
+    background-transition: fade
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: images/natesm_small.png
+    fontsize: 34pt
+    css: styles.css
+    title-slide-attributes:
+      data-background-image: "images/default_background.jpg"
+---
+
+## The state of affairs {background-image="images/default_background.jpg"}
+
+::: {.r-stack}
+![](images/atlas.png){.fragment fig-align="center" width=40%}
+
+::: {.fragment .absolute top=170 width=250 left=38%}
+Earth System Modelling
+:::
+
+::: {.fragment .absolute top=560 width=250 left=42%}
+HPC Scientific Software
+:::
+
+:::
+
+## Like Atlas, HPC software is not feeling well {background-image="images/sad_statue.jpg" background-position="0% 50%" background-size="120%"}
+
+. . .
+
+<br>
+No trained software engineers
+
+. . .
+
+<br>
+Organic development
+
+. . .
+
+
+<br>
+Software seen only as a tool
+
+. . .
+
+<br>
+Understaffed institutions
+
+
+## Poor software quality is a huge waste of resources {background-image="images/default_background.jpg"}
+
+. . .
+
+<br>
+Software quality costed the US economy **U$ 2.41 Trillions** in 2022^1^
+
+::: {.r-stack}
+
+![](images/cpsq_breakdown_1.svg){.fragment}
+
+![](images/cpsq_breakdown_2.svg){.fragment}
+
+![](images/cpsq_breakdown_3.svg){.fragment}
+
+:::
+
+## {background-image="images/iceberg.jpeg" background-position="0% 20%" background-size="120%"}
+
+## Visible costs {background-image="images/iceberg.jpeg" background-position="35% 0%" background-size="230%"}
+
+. . .
+
+<br>
+Wrong and failed experiments
+
+. . .
+
+<br>
+User support
+
+## Hidden costs {background-image="images/iceberg.jpeg" background-position="25% 100%" background-size="180%"}
+
+::: {.columns}
+::: {.column}
+
+::: {.fragment}
+<br>
+Fixing bugs
+:::
+
+::: {.fragment}
+<br>
+Complex code
+:::
+
+::: {.fragment}
+<br>
+Technical debt
+:::
+
+::: {.fragment}
+<br>
+Longer onboarding
+:::
+
+:::
+
+::: {.column}
+::: {.fragment}
+<br>
+Excessive systems costs
+:::
+
+::: {.fragment}
+<br>
+Lost research opportunities
+:::
+
+:::
+
+:::
+
+## natESM comes to help {background-image="images/default_background.jpg"}
+
+. . .
+
+<br>
+Improving **technical infrastructure to serve Science**
+
+. . .
+
+<br>
+6 months projects (sprints)
+
+. . .
+
+<br>
+Well-defined **goals and timeline**
+
+## natESM has improved many models {background-image="images/default_background.jpg"}
+
+![](images/model_logos/icon.png){.fragment .absolute top=270}
+
+![](images/model_logos/messy.png){.fragment .absolute left="250" top=220}
+
+![](images/model_logos/fesom.png){.fragment .absolute width="30%" left=450 top=270}
+
+![](images/model_logos/wam.png){.fragment .absolute width="15%" left=900 top=220}
+
+![](images/model_logos/esmvaltool.png){.fragment .absolute top="470" width="40%"}
+
+![](images/model_logos/palm.png){.fragment .absolute  top="420" left=550}
+
+![](images/model_logos/pism.png){.fragment .absolute width="20%" top="470" left=800}
+
+::: {.fragment .absolute top="660"}
+And more... 
+:::
+
+::: {.notes}
+Get the exact number of models and more examples to talk about
+:::
+
+## What was done {background-image="images/default_background.jpg"}
+
+<br>
+<br>
+
+::: {.r-stack}
+
+![](images/natesm_work_breakdown_1.svg){.fragment}
+
+![](images/natesm_work_breakdown_2.svg){.fragment}
+
+![](images/natesm_work_breakdown_3.svg){.fragment}
+
+:::
+
+::: {.notes}
+Think of a better title
+Correct the plot
+:::
+
+## The case of CLEO {background-image="images/default_background.jpg"}
+
+
+::: {.columns .absolute top=200}
+
+::: {.column width="33%"}
+![](images/parallelization.png){width="40%"}
+<br>
+Parallelization <br>with MPI
+:::
+
+::: {.column width="33%"}
+![](images/hand-shake.png){width="40%"}
+<br>
+Coupling <br>with ICON
+:::
+
+::: {.column width="33%"}
+![](images/tests.png){width="40%"}
+<br>
+Versionining
+<br>
+Releases
+<br>
+Git workflows
+<br>
+CI/CD
+:::
+
+:::
+
+## You can only improve what you can measure {background-image="images/default_background.jpg"}
+
+. . .
+
+<br>
+A simple framework to list software quality deficiencies
+
+. . .
+
+<br>
+Evaluation produces a **score** for the model
+
+. . .
+
+<br>
+List of actionable items that can be worked on during a sprint
+
+## Some of the criteria {background-image="images/sad_statue.jpg" background-position="top left"}
+
+. . .
+
+<br>
+Tests
+
+. . .
+
+<br>
+CI
+
+. . .
+
+<br>
+Poorly named variables
+
+. . .
+
+<br>
+Unreachable code
+
+. . .
+
+<br>
+No comments
+
+## Conclusion {background-image="images/sad_statue.jpg" background-position="top left"}
+
+. . .
+
+<br>
+Poor software quality has large hidden costs 
+
+. . .
+
+<br>
+natESM has improved many models with its sprints
+
+. . .
+
+<br>
+We are introducing a software quality evaluation framework to assess and further improve models

@@ -1,0 +1,28 @@
+<svg width="1100" height="300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .label { font: 36px sans-serif; fill: #EEEEEE; dominant-baseline: middle; }
+    .value { font: 32px sans-serif; fill: #EEEEEE; dominant-baseline: middle; }
+  </style>
+
+  <!-- Bars -->
+  <!-- Scale factor: 607B -> 600px -->
+
+  <!-- Failed development projects -->
+  <text x="0" y="55" class="label">Failed development projects</text>
+  <rect x="500" y="33" width="257" height="45" fill="#FFC107"/>
+  <text x="510" y="55" class="value">U$ 260B</text>
+
+  <!-- Legacy systems -->
+  <text x="0" y="145" class="label">Legacy systems</text>
+  <rect x="500" y="123" width="514" height="45" fill="#2196F3"/>
+  <text x="510" y="145" class="value">U$ 520B</text>
+
+  <!-- Finding and fixing defects -->
+  <text x="0" y="235" class="label">Finding and fixing defects</text>
+  <rect x="500" y="213" width="600" height="45" fill="#F44336"/>
+  <text x="510" y="235" class="value">U$ 607B</text>
+
+  <!-- Axis line -->
+  <line x1="500" y1="10" x2="500" y2="280" stroke="#000"/>
+
+</svg>
