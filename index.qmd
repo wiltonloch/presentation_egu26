@@ -2,7 +2,7 @@
 title: "The natESM Journey for Improving Software Quality in Earth System Modelling"
 #subtitle: "What is already there and where to go"
 author: <br>Wilton Jaciel Loch 
-institute: German Climate Computing Center (DKRZ)
+institute: natESM | German Climate Computing Center (DKRZ)
 format:
   revealjs:
     width: 1280
@@ -27,17 +27,27 @@ format:
 ::: {.r-stack}
 ![](images/atlas.png){.fragment fig-align="center" width=40%}
 
-::: {.fragment .absolute top=170 width=250 left=38%}
+::: {.fragment .absolute top=170 width=250 left=43%}
 Earth System Modelling
 :::
 
-::: {.fragment .absolute top=560 width=250 left=42%}
+::: {.fragment .absolute top=580 width=250 left=43%}
 HPC Scientific Software
+:::
+
+::: footer
+Photo Credit: Pexels/Vincent Delsuc
 :::
 
 :::
 
 ## Like Atlas, HPC software is not feeling well {background-image="images/sad_statue.jpg" background-position="0% 50%" background-size="120%"}
+
+
+. . .
+
+<br>
+Organic development
 
 . . .
 
@@ -47,26 +57,23 @@ No trained software engineers
 . . .
 
 <br>
-Organic development
+Understaffed institutions
 
 . . .
-
 
 <br>
 Software seen only as a tool
 
-. . .
-
-<br>
-Understaffed institutions
-
+::: footer
+Photo Credit: Pexels/Jean-Baptiste Terrazzoni
+:::
 
 ## Poor software quality is a huge waste of resources {background-image="images/default_background.jpg"}
 
 . . .
 
 <br>
-Software quality costed the US economy **U$ 2.41 Trillions** in 2022^1^
+Software quality costed the US economy **U$ 2.41 Trillion** in 2022^1^
 
 ::: {.r-stack}
 
@@ -78,9 +85,14 @@ Software quality costed the US economy **U$ 2.41 Trillions** in 2022^1^
 
 :::
 
-## {background-image="images/iceberg.jpeg" background-position="0% 20%" background-size="120%"}
+## The costs {background-image="images/iceberg.jpeg" background-position="0% 20%" background-size="120%"}
 
 ## Visible costs {background-image="images/iceberg.jpeg" background-position="35% 0%" background-size="230%"}
+
+. . .
+
+<br>
+Model inaccessability
 
 . . .
 
@@ -139,6 +151,7 @@ Lost research opportunities
 . . .
 
 <br>
+<br>
 Improving **technical infrastructure to serve Science**
 
 . . .
@@ -151,7 +164,27 @@ Improving **technical infrastructure to serve Science**
 <br>
 Well-defined **goals and timeline**
 
-## natESM has improved many models {background-image="images/default_background.jpg"}
+## Improvements done by natESM {background-image="images/default_background.jpg"}
+
+<br>
+<br>
+
+::: {.r-stack}
+
+![](images/natesm_work_breakdown_1.svg){.fragment}
+
+![](images/natesm_work_breakdown_2.svg){.fragment}
+
+![](images/natesm_work_breakdown_3.svg){.fragment}
+
+:::
+
+::: {.notes}
+Think of a better title
+Correct the plot
+:::
+
+## natESM has improved many ESM models {background-image="images/default_background.jpg"}
 
 ![](images/model_logos/icon.png){.fragment .absolute top=270}
 
@@ -175,44 +208,28 @@ And more...
 Get the exact number of models and more examples to talk about
 :::
 
-## What was done {background-image="images/default_background.jpg"}
-
-<br>
-<br>
-
-::: {.r-stack}
-
-![](images/natesm_work_breakdown_1.svg){.fragment}
-
-![](images/natesm_work_breakdown_2.svg){.fragment}
-
-![](images/natesm_work_breakdown_3.svg){.fragment}
-
-:::
-
-::: {.notes}
-Think of a better title
-Correct the plot
-:::
-
 ## The case of CLEO {background-image="images/default_background.jpg"}
 
+. . .
 
-::: {.columns .absolute top=200}
+<br>
+Cloud microphysics superdroplet model
 
-::: {.column width="33%"}
+::: {.columns .absolute top=280}
+
+::: {.fragment .column width="33%"}
 ![](images/parallelization.png){width="40%"}
 <br>
 Parallelization <br>with MPI
 :::
 
-::: {.column width="33%"}
+::: {.fragment .column width="33%"}
 ![](images/hand-shake.png){width="40%"}
 <br>
 Coupling <br>with ICON
 :::
 
-::: {.column width="33%"}
+::: {.fragment .column width="33%"}
 ![](images/tests.png){width="40%"}
 <br>
 Versionining
@@ -226,12 +243,93 @@ CI/CD
 
 :::
 
+## CLEO - CI expansion {background-image="images/default_background.jpg"}
+
+::: {.columns}
+::: {.column}
+::: {.fragment}
+Semantic versioning <br>
+![](images/cleo_semver.png){width=10vw}
+:::
+
+::: {.fragment}
+Precommit <br>
+![](images/cleo_precommit.png)
+:::
+:::
+
+::: {.column .fragment}
+Conventional commits <br>
+![](images/cleo_conventional_commits.png){heigth=5vh}
+:::
+:::
+
+## CLEO - Release improvements {background-image="images/default_background.jpg"}
+
+::: {.columns}
+::: {.column}
+::: {.fragment}
+Automatic releases <br>
+![](images/cleo_auto_release.png)
+:::
+
+::: {.fragment}
+Automatic changelog <br>
+![](images/cleo_auto_changelog.png)
+:::
+:::
+
+::: {.column}
+::: {.fragment}
+Linear Git history
+:::
+
+::: {.fragment}
+<br>
+Documentation generation
+:::
+
+::: {.fragment}
+<br>
+CI builds for all examples
+:::
+
+::: {.fragment}
+<br>
+Serial and parallel CI runs
+:::
+
+:::
+:::
+
+## Changing software and workflows can be challenging {background-image="images/default_background.jpg"}
+
+. . .
+
+<br>
+Convincing about utility
+
+. . .
+
+<br>
+Old habits are hard to change
+
+. . .
+
+<br>
+Lack of enforcing turns into lack of use
+
+. . .
+
+<br>
+Delayed merging can require large reworks
+
 ## You can only improve what you can measure {background-image="images/default_background.jpg"}
 
 . . .
 
 <br>
-A simple framework to list software quality deficiencies
+We are creating a simple framework to list software quality deficiencies
 
 . . .
 
@@ -243,39 +341,38 @@ Evaluation produces a **score** for the model
 <br>
 List of actionable items that can be worked on during a sprint
 
-## Some of the criteria {background-image="images/sad_statue.jpg" background-position="top left"}
+## How the framework works {background-image="images/default_background.jpg"}
+
+::: {.columns}
+::: {.column width=60%}
+
+::: {.fragment}
+<br>
+Collection of bad points of models
+:::
+
+::: {.fragment}
+<br>
+Reproducible and fairly objective
+:::
+
+::: {.fragment}
+<br>
+Can be used to track the model evolution
+:::
+:::
+::: {.column .fragment width=40%}
+<br>
+![](images/framework_qr.png)
+:::
+:::
+
+<!-- ## Conclusion {background-image="images/default_background.jpg"}
 
 . . .
 
 <br>
-Tests
-
-. . .
-
-<br>
-CI
-
-. . .
-
-<br>
-Poorly named variables
-
-. . .
-
-<br>
-Unreachable code
-
-. . .
-
-<br>
-No comments
-
-## Conclusion {background-image="images/sad_statue.jpg" background-position="top left"}
-
-. . .
-
-<br>
-Poor software quality has large hidden costs 
+Poor software quality has large and often hidden costs 
 
 . . .
 
@@ -285,4 +382,22 @@ natESM has improved many models with its sprints
 . . .
 
 <br>
-We are introducing a software quality evaluation framework to assess and further improve models
+We are introducing a software quality evaluation framework to further improve our component models -->
+
+## Conclusion {background-image="images/default_background.jpg"}
+
+. . .
+
+<br>
+<br>
+<br>
+
+"Over a 25-year life expectancy of a large software system, almost **fifty cents out of every dollar** will go to finding and fixing bugs."^1^
+
+## References {background-image="images/default_background.jpg"}
+
+<br>
+1 - Consortium for Information & Software Quality (CISQ). The Cost of Poor Software Quality in the U.S.: A 2022 Report. CISQ, 2022, https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/ 
+
+<br>
+2 - Krasner, Herb. "The cost of poor quality software in the us: A 2018 report." Consortium for IT Software Quality, Tech. Rep 10 (2018): 8.

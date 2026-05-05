@@ -1,3 +1,10 @@
 .reveal .title {
     font-size: 1.8em;
 }
+
+.footer {
+  position: absolute;
+  left: 350px;
+  bottom: 10px;
+  font-size: 0.75em;
+}
